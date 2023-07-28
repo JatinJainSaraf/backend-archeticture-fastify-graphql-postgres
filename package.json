@@ -1,0 +1,32 @@
+{
+  "name": "backend-architecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "migrate": "sequelize db:migrate",
+    "migrate:undo": "sequelize db:migrate:undo",
+    "migrate:undo:all": "sequelize db:migrate:undo:all"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.9.0",
+    "@as-integrations/fastify": "^2.1.0",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.21.0",
+    "graphql": "^16.7.1",
+    "graphql-tag": "^2.12.6",
+    "lodash": "^4.17.21",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.1",
+    "pino": "^8.14.2",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.1"
+  }
+}
